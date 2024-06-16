@@ -14,8 +14,14 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 - Quản lý lịch làm việc: Lập lịch, chỉnh sửa, xóa và xem lịch làm việc của nhân viên, bao gồm ngày làm việc, giờ bắt đầu và giờ kết thúc ca làm.
 - Quản lý thông tin về các khóa đào tạo mà nhân viên tham gia, bao gồm tên khóa, ngày đào tạo, và chứng chỉ đạt được.
 - Quản lý các yêu cầu nghỉ phép, nghỉ bệnh, và phúc lợi của nhân viên.
-
-
+# báo cáo:
+- Báo cáo lương của nhân viên trong tháng.
+- Cung cấp báo cáo chi tiết về tình trạng đào tạo của từng nhân viên.
+- Báo cáo chi tiết về hiệu suất làm việc của từng nhân viên để hỗ trợ quyết định thăng tiến, khen thưởng, hoặc đào tạo lại.
+- báo cáo về số lượng ngày nghỉ của nhân viên trong tháng và trong năm.
+- báo cáo về tình hình vi phạm và kỷ luật của nhân viên.
+- báo cáo về tình trạng sức khoẻ của nhân viên.
+# các bảng của hệ thống: 
 
 
 
