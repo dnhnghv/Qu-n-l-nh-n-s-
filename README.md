@@ -22,6 +22,8 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 - báo cáo về tình hình vi phạm và kỷ luật của nhân viên.
 - báo cáo về tình trạng sức khoẻ của nhân viên.
 # các bảng của hệ thống: 
+- với các mô tả chức năng và báo cáo như trên thì bài toán cần có các bảng sau:
+  
 
 
 
