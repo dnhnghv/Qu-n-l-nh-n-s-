@@ -1,15 +1,15 @@
-#1. Thông Tin về sinh viên.
-Họ tên :Đinh Nguyễn Hoàng Vũ
-Mã SV : K215480106133
-Lớp K57KMT
-Bài tập lớn môn học : Hệ quản trị cơ sở dữ liệu.
+# Thông Tin về sinh viên.
+- Họ tên :Đinh Nguyễn Hoàng Vũ
+- Mã SV : K215480106133
+- Lớp K57KMT
+- Bài tập lớn môn học : Hệ quản trị cơ sở dữ liệu.
 
-#2. Thông tin về bài toán
-Project csdl cho bài toán:Quản lý nhân sự trong bệnh viện.
-#mô tả về bài toán:
-Để quản lý nhân sự trong bệnh viện cần thiết kế cơ sở dữ liệu bao gồm các thông tin về nhân viên, phòng ban, công việc, bệnh nhân, cuộc hẹn và các thông tin liên quan khác. lịch làm việc, đào tạo, đánh giá hiệu suất, lương bổng và các phúc lợi khác.
+# Thông tin về bài toán
+- Project csdl cho bài toán:Quản lý nhân sự trong bệnh viện.
+- mô tả về bài toán:
+Để quản lý nhân sự trong bệnh viện cần thiết kế cơ sở dữ liệu bao gồm các thông tin về nhân viên, phòng ban, công việc, bệnh nhân. lịch làm việc, đào tạo, đánh giá hiệu suất, lương bổng và các phúc lợi khác.
 # Chức năng:
-Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản lý hiệu quả và tối ưu hóa nguồn nhân lực. Dưới đây là các chức năng chính của hệ thống quản lý nhân sự bệnh viện:
+Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản lý hiệu quả và tối ưu hóa nguồn nhân lực:
 
 ## 1. Tuyển dụng và Bổ nhiệm
 - Quản lý Tuyển dụng: Quản lý quá trình tuyển dụng từ việc đăng tin tuyển dụng, tiếp nhận và lọc hồ sơ ứng viên, tổ chức phỏng vấn, và đánh giá ứng viên.
@@ -39,15 +39,9 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 - Tạo Báo cáo: Tạo các báo cáo định kỳ về nhân sự, bao gồm báo cáo về hiệu suất, lương bổng, đào tạo, và các chỉ số liên quan khác.
 - **Phân tích Dữ liệu**: Sử dụng dữ liệu để phân tích, dự đoán và đưa ra các quyết định chiến lược về quản lý nhân sự.
 
-## 8. Tuân thủ Quy định và Luật pháp
-- Tuân thủ Luật Lao động: Đảm bảo các chính sách và quy trình tuân thủ các quy định pháp luật về lao động và bảo vệ dữ liệu.
-- Tuân thủ Quy định Ngành Y tế: Đảm bảo tuân thủ các quy định và tiêu chuẩn của ngành y tế để bảo đảm an toàn và chất lượng dịch vụ.
 
-## 9. Ứng dụng Công nghệ
-- Hệ thống Quản lý Nhân sự : Sử dụng phần mềm quản lý nhân sự để tự động hóa các quy trình và cải thiện hiệu quả quản lý.
-- Phân tích Dữ liệu: Áp dụng các công cụ phân tích dữ liệu để đưa ra các quyết định dựa trên dữ liệu chính xác và cập nhật.
 
-Những chức năng này nhằm đảm bảo bệnh viện có thể quản lý nhân sự một cách toàn diện và hiệu quả, từ đó nâng cao chất lượng dịch vụ và đáp ứng tốt hơn nhu cầu của bệnh nhân.
+
 
 
 
