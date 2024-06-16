@@ -23,7 +23,16 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 - báo cáo về tình trạng sức khoẻ của nhân viên.
 # các bảng của hệ thống: 
 - với các mô tả chức năng và báo cáo như trên thì bài toán cần có các bảng sau:
-  
+  - Bảng NhanVien(MaNhanVien,HoTen,NgaySinh,NgayVaoLam,ChucVu,MaKhoa,MaPhongBan,Luong);
+  - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
+  - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
+  - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
+  - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
+  - Bảng DanhGiaHieuSuat(MaDanhGia,MaNhanVien,NgayDanhGia,DiemDanhGia,GhiChu);
+  - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
+  - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
+  - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
+  - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
 
 
 
