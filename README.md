@@ -85,7 +85,12 @@ Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN
 Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
     
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
-    
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a4047a52-1117-49dc-8489-46b87d8d84b2)
+
+    + Khóa ngoại đảm bảo rằng giá trị của cột MaNhanVien trong bảng Vi Phạm Kỷ Luật phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này ngăn chặn việc nhập dữ liệu vi phạm kỷ luật cho một nhân viên không tồn tại.
+Khóa ngoại tạo mối quan hệ giữa bảng Vi Phạm Kỷ Luật và bảng Nhân Viên. Nó giúp kết nối thông tin về vi phạm kỷ luật với thông tin về nhân viên vi phạm đó.
+Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN, ràng buộc khóa ngoại này giúp dễ dàng lấy thông tin liên quan từ cả bảng Vi Phạm Kỷ Luật và bảng Nhân Viên dựa trên mối quan hệ giữa chúng.
+Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
   ## sau đây là cụ thể về các bảng cũng như sự liên kết giữa các bảng với nhau:
   
 
