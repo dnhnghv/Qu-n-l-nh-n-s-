@@ -91,7 +91,22 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộ
 Khóa ngoại tạo mối quan hệ giữa bảng Vi Phạm Kỷ Luật và bảng Nhân Viên. Nó giúp kết nối thông tin về vi phạm kỷ luật với thông tin về nhân viên vi phạm đó.
 Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN, ràng buộc khóa ngoại này giúp dễ dàng lấy thông tin liên quan từ cả bảng Vi Phạm Kỷ Luật và bảng Nhân Viên dựa trên mối quan hệ giữa chúng.
 Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
-  ## sau đây là cụ thể về các bảng cũng như sự liên kết giữa các bảng với nhau:
+  ## thêm các rằng buộc CK cho bài toán:
+    - Điểm đánh giá hiệu suất sẽ nằm trong khoảng từ 1 đến 10.
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ea28c32e-5775-400d-9906-e1cfec9ea625)
+
+    - số tiền lương phải lớn hơn 0.
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5c8410cf-3ea6-44bc-b331-e8e266295288)
+
+    - NgayBatDau DATE: Ngày bắt đầu nghỉ phép phải trước ngày kết thúc. NgayKetThuc DATE: Ngày kết thúc nghỉ phép phải sau ngày bắt đầu.
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8153fdd2-29c6-41d5-94bd-a59a72729555)
+
+    -  Ngày vi phạm không thể trong tương lai.
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5e86a118-516d-4f48-83f9-55e447456c2e)
+
+    
+     
+
   
 
 
