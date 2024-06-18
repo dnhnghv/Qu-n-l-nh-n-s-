@@ -91,7 +91,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộ
 Khóa ngoại tạo mối quan hệ giữa bảng Vi Phạm Kỷ Luật và bảng Nhân Viên. Nó giúp kết nối thông tin về vi phạm kỷ luật với thông tin về nhân viên vi phạm đó.
 Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN, ràng buộc khóa ngoại này giúp dễ dàng lấy thông tin liên quan từ cả bảng Vi Phạm Kỷ Luật và bảng Nhân Viên dựa trên mối quan hệ giữa chúng.
 Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
-  ## thêm các rằng buộc CK cho bài toán:
+  ##thêm các rằng buộc CK cho bài toán:
     - Điểm đánh giá hiệu suất sẽ nằm trong khoảng từ 1 đến 10.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ea28c32e-5775-400d-9906-e1cfec9ea625)
 
@@ -105,7 +105,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5e86a118-516d-4f48-83f9-55e447456c2e)
 
     
-     # Tạo SP.
+     #Tạo SP.
      ## 1.Thêm một nhân sự mới
 
   
