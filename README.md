@@ -27,17 +27,32 @@ CREATE DATABASE QuanLyNhanSuBenhVien;
 - với các mô tả chức năng và báo cáo như trên thì bài toán cần có các bảng sau:
   - Bảng NhanVien(MaNhanVien,HoTen,NgaySinh,NgayVaoLam,ChucVu,MaKhoa,MaPhongBan,Luong);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/45f08868-ee4c-416c-968f-8b271d486d85)
-    +  MaNhanVien, PK: Mã nhân viên duy nhất cho mỗi nhân viên;
+    +  MaNhanVien, PK: Mã nhân viên duy nhất cho mỗi nhân viên, để tăng tự động cho Mã Nhân Viên;
     +  MaKhoa, FK: Khóa ngoại tham chiếu đến bảng Khoa, Đảm bảo rằng mỗi nhân viên được liên kết với một khoa hợp lệ.
     +  MaPhongBan, FK: Khóa ngoại tham chiếu đến bảng PhongBan, Đảm bảo rằng mỗi nhân viên được liên kết với một phòng ban hợp lệ.
     +  Các khóa ngoại trong bảng NhanVien đảm bảo rằng mỗi nhân viên được liên kết với một khoa và một phòng ban hợp lệ, duy trì tính toàn vẹn dữ liệu và hỗ trợ việc quản lý, truy vấn thông tin một cách hiệu quả.
+    +   FOREIGN KEY (MaKhoa) REFERENCES Khoa(MaKhoa),Câu lệnh này xác định rằng trường MaKhoa trong bảng NhanVien là một khóa ngoại (Foreign Key).
+Khóa ngoại MaKhoa tham chiếu đến trường MaKhoa của bảng Khoa.Điều này có nghĩa là giá trị của MaKhoa trong bảng NhanVien phải tồn tại trong trường MaKhoa của bảng Khoa.
+Khóa ngoại đảm bảo tính toàn vẹn dữ liệu bằng cách không cho phép nhập giá trị vào MaKhoa trong bảng NhanVien nếu giá trị đó không tồn tại trong bảng Khoa.
+    +   FOREIGN KEY (MaPhongBan) REFERENCES PhongBan(MaPhongBan), Câu lệnh này xác định rằng trường MaPhongBan trong bảng NhanVien là một khóa ngoại (Foreign Key).
+Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng PhongBan.Khóa ngoại đảm bảo tính toàn vẹn dữ liệu bằng cách không cho phép nhập giá trị vào MaPhongBan trong bảng NhanVien nếu giá trị đó không tồn tại trong bảng PhongBan.
     
   - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/89a72789-3412-400e-989d-1a779d7612ba)
-    + 
+    + mã phòng ban đặt là khoá chính vì mỗi phòng ban sẽ chỉ có một mã duy nhất, để tăng tự động cho Mã Phòng.
+      
   - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/9381d814-39fb-4d3b-85d4-0707f8e1ed57)
+    + đặt Mã Khoa vì mỗi khoa chỉ có một mã làm khoá chính và được tăng tự động
+      
   - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
+    + Đảm bảo rằng giá trị trong trường MaNhanVien của bảng hiện tại phải tồn tại trong trường MaNhanVien của bảng NhanVien.
+Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bảng LichLamViec phải có MaNhanVien hợp lệ, tức là phải tham chiếu đến một nhân viên tồn tại trong bảng NhanVien.
+
+
   - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/7ba628bb-c3a9-48d1-9a62-c8480369b2a5)
+
   - Bảng DanhGiaHieuSuat(MaDanhGia,MaNhanVien,NgayDanhGia,DiemDanhGia,GhiChu);
   - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
   - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
