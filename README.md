@@ -76,9 +76,16 @@ Với ràng buộc khóa ngoại, khi bạn thực hiện các thao tác như JO
 Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc khóa ngoại sẽ kiểm tra xem MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
 
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/c2dc0003-48e3-4e05-b4f2-72a383bffa78)
 
+    + khoá chính mã nghỉ phép nghĩa là mỗi giá trị trong cột này là duy nhất và không trùng lặp. Điều này giúp xác định duy nhất mỗi kỳ nghỉ phép trong bảng.
+    + Khóa ngoại này đảm bảo rằng giá trị của cột MaNhanVien trong bảng Nghỉ Phép phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này ngăn chặn việc nhập dữ liệu không hợp lệ, chẳng hạn như gán một kỳ nghỉ phép cho một nhân viên không tồn tại.
+Khóa ngoại này tạo mối quan hệ giữa bảng Nghỉ Phép và bảng Nhân Viên. Điều này giúp liên kết thông tin về kỳ nghỉ phép với nhân viên cụ thể trong bảng Nhân Viên.
+Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN, ràng buộc khóa ngoại này giúp dễ dàng lấy thông tin liên quan từ cả bảng Nghỉ Phép và bảng Nhân Viên dựa trên mối quan hệ giữa chúng.
+Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
     
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
+    
   ## sau đây là cụ thể về các bảng cũng như sự liên kết giữa các bảng với nhau:
   
 
