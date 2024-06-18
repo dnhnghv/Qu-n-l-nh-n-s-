@@ -52,9 +52,17 @@ Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bản
 
   - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/7ba628bb-c3a9-48d1-9a62-c8480369b2a5)
-
+    + Đặt là khoá chính Mã đào tạo vì mỗi lần đào tạo sẽ chỉ có một mã duy nhất, để tăng tự động cho mã đào tạo.
+    + Đảm bảo rằng trường MaNhanVien trong bảng DaoTao tham chiếu đến trường MaNhanVien trong bảng NhanVien,Đảm bảo rằng mỗi khóa đào tạo được ghi nhận trong bảng DaoTao là của một nhân viên hợp lệ, tức là một nhân viên có tồn tại trong bảng NhanVien
+      
   - Bảng DanhGiaHieuSuat(MaDanhGia,MaNhanVien,NgayDanhGia,DiemDanhGia,GhiChu);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/40b042ce-146c-4423-b4ba-90b79fdd484b)
+mã đánh giá Là khóa chính (Primary Key) của bảng HieuSuat, đảm bảo mỗi bản ghi trong bảng này là duy nhất.
+Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bảng HieuSuat đảm bảo rằng mỗi bản ghi hiệu suất liên kết với một nhân viên hợp lệ trong bảng NhanVien, duy trì tính toàn vẹn dữ liệu và hỗ trợ các truy vấn phức tạp liên quan đến đánh giá hiệu suất của nhân viên.
+
   - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/75df9cf0-b86f-406e-b150-9b4d9c3186af)
+
   - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
