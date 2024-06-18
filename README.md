@@ -33,6 +33,8 @@ CREATE DATABASE QuanLyNhanSuBenhVien;
     +  Các khóa ngoại trong bảng NhanVien đảm bảo rằng mỗi nhân viên được liên kết với một khoa và một phòng ban hợp lệ, duy trì tính toàn vẹn dữ liệu và hỗ trợ việc quản lý, truy vấn thông tin một cách hiệu quả.
     
   - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/89a72789-3412-400e-989d-1a779d7612ba)
+    + 
   - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
   - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
   - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
