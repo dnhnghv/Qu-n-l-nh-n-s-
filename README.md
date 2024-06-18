@@ -105,10 +105,25 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5e86a118-516d-4f48-83f9-55e447456c2e)
 
     
-     #Tạo SP.
-     ## 1.Thêm một nhân sự mới
+     # Tạo SP cho bài.
+       ## Thêm một nhân sự mới.
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8a46d6e7-63c5-4359-baf6-6d2371f4fb5f)
 
-  
+      ## Sửa thông tin của nhân sự.
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/3e3e8535-f7f4-4f78-830a-856f49f57f37)
+
+
+      ## Xoá thông tin của một nhân viên.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fcb6ebdc-0212-4029-baaf-133d6b3d2173)
+
+      ## Xem thông tin nhân viên bệnh viện.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1b34af3c-bb59-4e65-b396-024286edc32f)
+
+      ## Thêm một lịch làm việc mới cho nhân viên vào bảng.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/93f22a5d-7943-48cd-bd56-33e1835d92f6)
+
+      ##
+
 
 
 
