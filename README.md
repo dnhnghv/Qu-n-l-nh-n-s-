@@ -105,7 +105,8 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5e86a118-516d-4f48-83f9-55e447456c2e)
 
     
-     
+     # Tạo SP.
+     ## 1.Thêm một nhân sự mới
 
   
 
