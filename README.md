@@ -49,7 +49,6 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
     + Đảm bảo rằng giá trị trong trường MaNhanVien của bảng hiện tại phải tồn tại trong trường MaNhanVien của bảng NhanVien.
 Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bảng LichLamViec phải có MaNhanVien hợp lệ, tức là phải tham chiếu đến một nhân viên tồn tại trong bảng NhanVien.
 
-
   - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/7ba628bb-c3a9-48d1-9a62-c8480369b2a5)
     + Đặt là khoá chính Mã đào tạo vì mỗi lần đào tạo sẽ chỉ có một mã duy nhất, để tăng tự động cho mã đào tạo.
@@ -64,7 +63,6 @@ Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bản
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/75df9cf0-b86f-406e-b150-9b4d9c3186af)
 
     + Tạo mối quan hệ giữa bảng Luong và NhanVien:
-
 Khóa ngoại đảm bảo rằng mỗi bản ghi lương phải liên kết với một nhân viên cụ thể trong bảng NhanVien.
 Đảm bảo rằng không thể nhập một MaNhanVien vào bảng Luong nếu mã nhân viên đó không tồn tại trong bảng NhanVien.
 giúp thực hiện các truy vấn kết hợp dữ liệu từ cả hai bảng để tạo báo cáo chi tiết về lương của nhân viên.
@@ -76,7 +74,7 @@ Với ràng buộc khóa ngoại, khi bạn thực hiện các thao tác như JO
 Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc khóa ngoại sẽ kiểm tra xem MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
 
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
-![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/c2dc0003-48e3-4e05-b4f2-72a383bffa78)
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/c2dc0003-48e3-4e05-b4f2-72a383bffa78)
 
     + khoá chính mã nghỉ phép nghĩa là mỗi giá trị trong cột này là duy nhất và không trùng lặp. Điều này giúp xác định duy nhất mỗi kỳ nghỉ phép trong bảng.
     + Khóa ngoại này đảm bảo rằng giá trị của cột MaNhanVien trong bảng Nghỉ Phép phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này ngăn chặn việc nhập dữ liệu không hợp lệ, chẳng hạn như gán một kỳ nghỉ phép cho một nhân viên không tồn tại.
@@ -122,7 +120,41 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
       ## Thêm một lịch làm việc mới cho nhân viên vào bảng.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/93f22a5d-7943-48cd-bd56-33e1835d92f6)
 
-      ##
+      ## chỉnh sửa lịch làm việc.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/cdd44f3b-16d9-41f3-81a5-ae57cdf114b7)
+
+      ## Xoá lịch làm việc.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a7e690ee-7511-47f3-ae49-1a3dd6136297)
+
+      ## Xem lịch làm việc của nhân viên.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/dccfc117-8747-4aa0-9e15-5b14fc5502e8)
+      ## Thêm thông tin khóa đào tạo.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b60b56b3-fe34-46b4-bede-2eb8d8822d66)
+      ## Sửa thông tin khóa đào tạo.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8be89964-f189-4ebb-bcd9-0cfd22e1df22)
+  
+      ## Xoá thông tin khóa đào tạo.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/70c4b04e-bf0e-4fe5-bcf8-1f91b9f84bb1)
+      ## Xem thông tin khóa đào tạo của nhân viên.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5b220dba-9c17-44a4-bc5d-bdb5d445e9aa)
+      ## Thêm yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2a3d0b06-53df-4032-9d0b-49c967eaaed7)
+      ## xoá yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/eb990bf6-e71a-4b22-a07a-4a74b0bc2145)
+      ## xem yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1d53d19a-7aff-4806-8d6d-c3a7477b82ce)
+      ## Báo cáo lương của nhân viên trong tháng.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc363835-c980-48c3-9e47-b47354db9db2)
+
+
+
+
+
+
+
+
+
+
 
 
 
