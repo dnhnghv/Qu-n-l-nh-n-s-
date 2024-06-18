@@ -22,8 +22,16 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 - báo cáo về tình hình vi phạm và kỷ luật của nhân viên.
 - báo cáo về tình trạng sức khoẻ của nhân viên.
 # các bảng của hệ thống: 
+- tạo database cho bài toán quản lý:
+CREATE DATABASE QuanLyNhanSuBenhVien;
 - với các mô tả chức năng và báo cáo như trên thì bài toán cần có các bảng sau:
   - Bảng NhanVien(MaNhanVien,HoTen,NgaySinh,NgayVaoLam,ChucVu,MaKhoa,MaPhongBan,Luong);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/45f08868-ee4c-416c-968f-8b271d486d85)
+    +  MaNhanVien, PK: Mã nhân viên duy nhất cho mỗi nhân viên;
+    +  MaKhoa, FK: Khóa ngoại tham chiếu đến bảng Khoa, Đảm bảo rằng mỗi nhân viên được liên kết với một khoa hợp lệ.
+    +  MaPhongBan, FK: Khóa ngoại tham chiếu đến bảng PhongBan, Đảm bảo rằng mỗi nhân viên được liên kết với một phòng ban hợp lệ.
+    +  Các khóa ngoại trong bảng NhanVien đảm bảo rằng mỗi nhân viên được liên kết với một khoa và một phòng ban hợp lệ, duy trì tính toàn vẹn dữ liệu và hỗ trợ việc quản lý, truy vấn thông tin một cách hiệu quả.
+    
   - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
   - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
   - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
@@ -33,6 +41,8 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
   - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
+  ## sau đây là cụ thể về các bảng cũng như sự liên kết giữa các bảng với nhau:
+  
 
 
 
