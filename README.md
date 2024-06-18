@@ -63,8 +63,21 @@ Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bản
   - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/75df9cf0-b86f-406e-b150-9b4d9c3186af)
 
+    + Tạo mối quan hệ giữa bảng Luong và NhanVien:
+
+Khóa ngoại đảm bảo rằng mỗi bản ghi lương phải liên kết với một nhân viên cụ thể trong bảng NhanVien.
+Đảm bảo rằng không thể nhập một MaNhanVien vào bảng Luong nếu mã nhân viên đó không tồn tại trong bảng NhanVien.
+giúp thực hiện các truy vấn kết hợp dữ liệu từ cả hai bảng để tạo báo cáo chi tiết về lương của nhân viên.
   - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/37589023-568d-482f-b77c-2df698f9a05e)
+    + Khóa ngoại đảm bảo rằng giá trị của cột MaNhanVien trong bảng Phúc Lợi phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này đảm bảo rằng mỗi phúc lợi phải được gán cho một nhân viên hợp lệ trong bảng Nhân Viên.
+Khóa ngoại tạo mối quan hệ giữa bảng Phúc Lợi và bảng Nhân Viên. Nó giúp kết nối thông tin về phúc lợi với thông tin về nhân viên nhận phúc lợi đó.
+Với ràng buộc khóa ngoại, khi bạn thực hiện các thao tác như JOIN giữa bảng Phúc Lợi và bảng Nhân Viên, bạn có thể dễ dàng lấy thông tin liên quan từ cả hai bảng dựa trên mối quan hệ giữa chúng.
+Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc khóa ngoại sẽ kiểm tra xem MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
+
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
+
+    
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
   ## sau đây là cụ thể về các bảng cũng như sự liên kết giữa các bảng với nhau:
   
