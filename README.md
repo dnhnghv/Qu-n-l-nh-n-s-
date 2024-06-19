@@ -214,6 +214,23 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/96dbf9f3-3be9-4f25-903f-21a18cf230f0)
 kết quả:
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/163176d9-2fcf-4629-8464-e976f0c23498)
+# tạo FN:
+
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/255cbc88-0a25-4c9c-b3a6-fe2fb6bbee13)
++ kết quả:
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/926f82ac-0ff7-498e-9486-45b10ccc653a)
+
+
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ecf61a5c-43ee-41ee-95e9-e114d9321abd)
+
+- Tạo hàm để tính số ngày nghỉ của nhân viên trong một tháng cụ thể:
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/477e6543-1c43-4cb7-809d-60e292abacb5)
+
+- Tạo hàm FN_TinhLuong.hàm này tính lương dựa trên mức lương cơ bản, số ngày công, và hệ số lương.
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/125bd085-6b08-49be-9fda-b429b1331771)
+
+
+
 
 
 
