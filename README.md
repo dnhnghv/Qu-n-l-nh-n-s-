@@ -220,14 +220,22 @@ tạo FN tính tuổi:
 + kết quả:
 ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/926f82ac-0ff7-498e-9486-45b10ccc653a)
 
-
-![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ecf61a5c-43ee-41ee-95e9-e114d9321abd)
-
 - Tạo hàm để tính số ngày nghỉ của nhân viên trong một tháng cụ thể:
 ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/477e6543-1c43-4cb7-809d-60e292abacb5)
 
 - Tạo hàm FN_TinhLuong.hàm này tính lương dựa trên mức lương cơ bản, số ngày công, và hệ số lương.
 ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/125bd085-6b08-49be-9fda-b429b1331771)
+# tạo trigger với chức năng lưu lịch sử thay đổi thông tin nhân viên 
+- đầu tiên tạo một bảng lịch sử thay đổi thông tin nhân viên.
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/88140534-6f8e-4098-8cd0-670ab655f8b1)
+- sau đó tạo trigger
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fd3d93f0-8a44-4ea6-9f46-4d5c831ef0b3)
+- kết quả :
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/81df52a9-dd6a-4239-8f8e-9888128399e4)
+  # Tạo corsor
+- Tạo một cursor để duyệt qua từng nhân viên trong bảng NhanVien và cập nhật lương của họ dựa trên một điều kiện (tăng 10% lương cho những nhân viên có chức vụ là "Bác sĩ").
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/60408348-4356-4428-a976-7fc8eb9293eb)
+
 
 
 
