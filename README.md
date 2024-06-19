@@ -32,6 +32,7 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 CREATE DATABASE QuanLyNhanSuBenhVien;
 - với các mô tả chức năng và báo cáo như trên thì bài toán cần có các bảng sau:
   - Bảng NhanVien(MaNhanVien,HoTen,NgaySinh,NgayVaoLam,ChucVu,MaKhoa,MaPhongBan,Luong);
+  - bảng nhân viên chứa các thông tin liên qua đến một nhân viên như tên, ngày sinh, ngày vào làm, khoa và phòng ban của nhân viên đó, chức vụ của một nhân viên.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/4e162182-8e69-4005-8ad7-a2251b9e60c2)
 
     +  MaNhanVien, PK: Mã nhân viên duy nhất cho mỗi nhân viên, để tăng tự động cho Mã Nhân Viên;
@@ -48,6 +49,7 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/30c1809c-9d22-4804-a631-9eedd276fcbf)
 
     - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
+    - bảng phòng ban giúp xác định được nhân viên thuộc bộ phận nào ví dụ như phòng hành chính, phòng nhân sự.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/89a72789-3412-400e-989d-1a779d7612ba)
     + mã phòng ban đặt là khoá chính vì mỗi phòng ban sẽ chỉ có một mã duy nhất, để tăng tự động cho Mã Phòng.
       TenPhongBan NVARCHAR(100) NOT NULL;
@@ -57,7 +59,7 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
 
 
     - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
-      
+    - xác định khoa của mỗi nhân viên đồng thời cung cấp tên khoa, mã khoa để phân biệt chuyên môn cụ thể của một nhân viên ví dụ khoa nội, khoa ngoại, khoa thần kinh vv
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/9381d814-39fb-4d3b-85d4-0707f8e1ed57)
     + đặt Mã Khoa vì mỗi khoa chỉ có một mã làm khoá chính và được tăng tự động;
       TenKhoa NVARCHAR(100) NOT NULL;
@@ -66,15 +68,17 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/e3b50cc1-1f0a-4883-88ff-9a032b132f9c)
 
     - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
+    - bảng lịch làm việc để phục vụ cho việc cung cấp thời gian làm việc cho từng nhân viên của bệnh viện dựa trên ngày làm việc cụ thể cũng như thời gian làm việc trong ngày.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/dd7d28c4-eb04-42b3-81cb-af64f999dfa7)
 
-    + Đảm bảo rằng giá trị trong trường MaNhanVien của bảng hiện tại phải tồn tại trong trường MaNhanVien của bảng NhanVien.
+    + giá trị trong trường MaNhanVien của bảng hiện tại phải tồn tại trong trường MaNhanVien của bảng NhanVien.
 Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bảng LichLamViec phải có MaNhanVien hợp lệ, tức là phải tham chiếu đến một nhân viên tồn tại trong bảng NhanVien.
       + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5ecb4235-2e56-4262-94d5-10f526bc4bb9)
 
 
     - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
+    - bảng đào tạo nhằm cung cấp các thông tin liên quan đến các khoá đào tạo với mục đích cấp chứng chỉ đào tạo cho nhân viên bảng dâof tạo kết nối với bảng nhân viên thông qua khoá ngoại mã nhân viên 
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/7ba628bb-c3a9-48d1-9a62-c8480369b2a5)
     + Đặt là khoá chính Mã đào tạo vì mỗi lần đào tạo sẽ chỉ có một mã duy nhất, để tăng tự động cho mã đào tạo.
     + Đảm bảo rằng trường MaNhanVien trong bảng DaoTao tham chiếu đến trường MaNhanVien trong bảng NhanVien,Đảm bảo rằng mỗi khóa đào tạo được ghi nhận trong bảng DaoTao là của một nhân viên hợp lệ, tức là một nhân viên có tồn tại trong bảng NhanVien
@@ -83,6 +87,7 @@ Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bản
 
 
     - Bảng DanhGiaHieuSuat(MaDanhGia,MaNhanVien,NgayDanhGia,DiemDanhGia,GhiChu);
+    - bảng này nhằm đánh giá chất lượng chuyên môn của các nhân viên một cách định kỳ thông qua điểm đánh giá, nếu điểm đánh giá thấp thì cần được cải thiện.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/40b042ce-146c-4423-b4ba-90b79fdd484b)
 mã đánh giá Là khóa chính (Primary Key) của bảng HieuSuat, đảm bảo mỗi bản ghi trong bảng này là duy nhất.
 Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bảng HieuSuat đảm bảo rằng mỗi bản ghi hiệu suất liên kết với một nhân viên hợp lệ trong bảng NhanVien, duy trì tính toàn vẹn dữ liệu và hỗ trợ các truy vấn phức tạp liên quan đến đánh giá hiệu suất của nhân viên.
@@ -91,10 +96,11 @@ Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bản
 
 
     - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
+    - nhằm thu thập lương của một nhân viên và phục vụ việc báo cáo lương của nhân viên vào mỗi, mỗi năm hoặc một thời gian xác định nào đó.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/75df9cf0-b86f-406e-b150-9b4d9c3186af)
 
-    + Tạo mối quan hệ giữa bảng Luong và NhanVien:
-Khóa ngoại đảm bảo rằng mỗi bản ghi lương phải liên kết với một nhân viên cụ thể trong bảng NhanVien.
+    
+    + Khóa ngoại manhanvien trong bảng lương đảm bảo rằng mỗi bản ghi lương phải liên kết với một nhân viên cụ thể trong bảng NhanVien.
 Đảm bảo rằng không thể nhập một MaNhanVien vào bảng Luong nếu mã nhân viên đó không tồn tại trong bảng NhanVien.
 giúp thực hiện các truy vấn kết hợp dữ liệu từ cả hai bảng để tạo báo cáo chi tiết về lương của nhân viên.
     + dữ liệu được nhập cho bảng:
@@ -102,6 +108,7 @@ giúp thực hiện các truy vấn kết hợp dữ liệu từ cả hai bảng
 
 
     - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
+    - bảng mã phúc lợi lưu trữ các loại phúc lợi cũng như thông tin liên quan đến phúc lợi đó qua khoá ngoại mã nhân viên trong bảng .
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/37589023-568d-482f-b77c-2df698f9a05e)
     + Khóa ngoại đảm bảo rằng giá trị của cột MaNhanVien trong bảng Phúc Lợi phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này đảm bảo rằng mỗi phúc lợi phải được gán cho một nhân viên hợp lệ trong bảng Nhân Viên.
 Khóa ngoại tạo mối quan hệ giữa bảng Phúc Lợi và bảng Nhân Viên. Nó giúp kết nối thông tin về phúc lợi với thông tin về nhân viên nhận phúc lợi đó.
@@ -112,6 +119,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc
 
 
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
+  - bảng này cung cấp thông tin nghỉ phép của một nhân viên và phục vụ cho việc viết báo cáo về số ngày nghỉ của nhân viên đó trong tháng và trong năm.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/c2dc0003-48e3-4e05-b4f2-72a383bffa78)
 
     + khoá chính mã nghỉ phép nghĩa là mỗi giá trị trong cột này là duy nhất và không trùng lặp. Điều này giúp xác định duy nhất mỗi kỳ nghỉ phép trong bảng.
@@ -124,6 +132,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộ
 
 
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
+  - bảng này lưu trữ và cũng cấp thông tin về một nhân vvieen vi phạm kỷ luật cũng như thông tin khác liên quan đến vi phạm đó.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a4047a52-1117-49dc-8489-46b87d8d84b2)
 
     + Khóa ngoại đảm bảo rằng giá trị của cột MaNhanVien trong bảng Vi Phạm Kỷ Luật phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này ngăn chặn việc nhập dữ liệu vi phạm kỷ luật cho một nhân viên không tồn tại.
@@ -134,6 +143,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/aa59fee3-a44a-47c5-a134-42bee99130f6)
         chú ý là ngày vi phạm không được xảy ra ở tương lai.
   - tạo bảng sức khoẻ
+  - bảng này để lưu trữ và cập nhật thông tin sức khoẻ của một nhân viên một cách định kỳ.
      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5fe7f93d-35c0-409d-9c2a-63e92ba61402)
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/edf3b44a-1d1c-4b87-8bd6-2dfb2e57dc67)
