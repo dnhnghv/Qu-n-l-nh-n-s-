@@ -45,7 +45,7 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
     + dữ liệu được nhập cho bảng:
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/30c1809c-9d22-4804-a631-9eedd276fcbf)
 
-  - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
+    - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/89a72789-3412-400e-989d-1a779d7612ba)
     + mã phòng ban đặt là khoá chính vì mỗi phòng ban sẽ chỉ có một mã duy nhất, để tăng tự động cho Mã Phòng.
     + dữ liệu được nhập cho bảng:
