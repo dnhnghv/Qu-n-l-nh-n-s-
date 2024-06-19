@@ -138,15 +138,12 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/edf3b44a-1d1c-4b87-8bd6-2dfb2e57dc67)
 - Thêm các rằng buộc (CK) cho bài toán.
-
     - Điểm đánh giá hiệu suất sẽ nằm trong khoảng từ 1 đến 10.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ea28c32e-5775-400d-9906-e1cfec9ea625)
-
     - số tiền lương phải lớn hơn 0.
      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5c8410cf-3ea6-44bc-b331-e8e266295288)
     - NgayBatDau DATE: Ngày bắt đầu nghỉ phép phải trước ngày kết thúc. NgayKetThuc DATE: Ngày kết thúc nghỉ phép phải sau ngày bắt đầu.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8153fdd2-29c6-41d5-94bd-a59a72729555)
-
     -  Ngày vi phạm không thể trong tương lai.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5e86a118-516d-4f48-83f9-55e447456c2e)
 
