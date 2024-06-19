@@ -109,30 +109,22 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
 
       ## Sửa thông tin của nhân sự.
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/3e3e8535-f7f4-4f78-830a-856f49f57f37)
-
-
-      ## Xoá thông tin của một nhân viên.
+      ## Xoá thông tin của một nhân viên
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fcb6ebdc-0212-4029-baaf-133d6b3d2173)
-
       ## Xem thông tin nhân viên bệnh viện.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1b34af3c-bb59-4e65-b396-024286edc32f)
-
       ## Thêm một lịch làm việc mới cho nhân viên vào bảng.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/93f22a5d-7943-48cd-bd56-33e1835d92f6)
-
       ## chỉnh sửa lịch làm việc.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/cdd44f3b-16d9-41f3-81a5-ae57cdf114b7)
-
       ## Xoá lịch làm việc.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a7e690ee-7511-47f3-ae49-1a3dd6136297)
-
       ## Xem lịch làm việc của nhân viên.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/dccfc117-8747-4aa0-9e15-5b14fc5502e8)
       ## Thêm thông tin khóa đào tạo.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b60b56b3-fe34-46b4-bede-2eb8d8822d66)
       ## Sửa thông tin khóa đào tạo.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8be89964-f189-4ebb-bcd9-0cfd22e1df22)
-  
       ## Xoá thông tin khóa đào tạo.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/70c4b04e-bf0e-4fe5-bcf8-1f91b9f84bb1)
       ## Xem thông tin khóa đào tạo của nhân viên.
