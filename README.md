@@ -52,6 +52,7 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc44480f-8b81-4c04-be7f-d6a713677cfd)
 
     - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
+      
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/9381d814-39fb-4d3b-85d4-0707f8e1ed57)
     + đặt Mã Khoa vì mỗi khoa chỉ có một mã làm khoá chính và được tăng tự động
     + dữ liệu được nhập cho bảng:
