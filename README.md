@@ -132,64 +132,88 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
 
     
      # Tạo SP cho bài.
-       ## Thêm một nhân sự mới.
+- Thêm một nhân sự mới.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8a46d6e7-63c5-4359-baf6-6d2371f4fb5f)
-      ## Sửa thông tin của nhân sự.
-  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/3e3e8535-f7f4-4f78-830a-856f49f57f37)
-      ## Xoá thông tin của một nhân viên
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fcb6ebdc-0212-4029-baaf-133d6b3d2173)
-      ## Xem thông tin nhân viên bệnh viện.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1b34af3c-bb59-4e65-b396-024286edc32f)
-      ## Thêm một lịch làm việc mới cho nhân viên vào bảng.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/93f22a5d-7943-48cd-bd56-33e1835d92f6)
-      ## chỉnh sửa lịch làm việc.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/cdd44f3b-16d9-41f3-81a5-ae57cdf114b7)
-      ## Xoá lịch làm việc.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a7e690ee-7511-47f3-ae49-1a3dd6136297)
-      ## Xem lịch làm việc của nhân viên.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/dccfc117-8747-4aa0-9e15-5b14fc5502e8)
-      ## Thêm thông tin khóa đào tạo.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b60b56b3-fe34-46b4-bede-2eb8d8822d66)
-      ## Sửa thông tin khóa đào tạo.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8be89964-f189-4ebb-bcd9-0cfd22e1df22)
-      ## Xoá thông tin khóa đào tạo.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/70c4b04e-bf0e-4fe5-bcf8-1f91b9f84bb1)
-      ## Xem thông tin khóa đào tạo của nhân viên.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5b220dba-9c17-44a4-bc5d-bdb5d445e9aa)
-      ## Thêm yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2a3d0b06-53df-4032-9d0b-49c967eaaed7)
-      ## xoá yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/eb990bf6-e71a-4b22-a07a-4a74b0bc2145)
-      ## xem yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1d53d19a-7aff-4806-8d6d-c3a7477b82ce)
-      ## Báo cáo lương của nhân viên trong tháng.
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc363835-c980-48c3-9e47-b47354db9db2)
-  kết quả: ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/6b6c89e4-05f2-4e67-90d4-556dec9b3339)
++ cách sử dụng:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/f2e9da11-9ebc-4c72-b7b0-1963e76865ef)
++ kết quả:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/46fc8131-59a4-416a-aa09-da7f2824b458)
 
-  Báo cáo chi tiết về tình trạng đào tạo của từng nhân viên
+- Sửa thông tin của nhân sự.
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/3e3e8535-f7f4-4f78-830a-856f49f57f37)
++ cách sử dụng:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/30b6d27d-3683-438d-8616-304c92cb3834)
+
+- Xoá thông tin của một nhân viên
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fcb6ebdc-0212-4029-baaf-133d6b3d2173)
+   kết quả:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b1d0faf8-9225-40bb-ae95-6943b7f83070)
+
+- Xem thông tin nhân viên bệnh viện.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1b34af3c-bb59-4e65-b396-024286edc32f)
+   kết quả:
+- Thêm một lịch làm việc mới cho nhân viên vào bảng.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/93f22a5d-7943-48cd-bd56-33e1835d92f6)
+   kết quả:
+- chỉnh sửa lịch làm việc.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/cdd44f3b-16d9-41f3-81a5-ae57cdf114b7)
+   kết quả:
+- Xoá lịch làm việc.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a7e690ee-7511-47f3-ae49-1a3dd6136297)
+   kết quả:
+- Xem lịch làm việc của nhân viên.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/dccfc117-8747-4aa0-9e15-5b14fc5502e8)
+   kết quả:
+- Thêm thông tin khóa đào tạo.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b60b56b3-fe34-46b4-bede-2eb8d8822d66)
+  kết quả:
+- Sửa thông tin khóa đào tạo.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8be89964-f189-4ebb-bcd9-0cfd22e1df22)
+  kết quả:
+- Xoá thông tin khóa đào tạo.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/70c4b04e-bf0e-4fe5-bcf8-1f91b9f84bb1)
+  kết quả:
+- Xem thông tin khóa đào tạo của nhân viên.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5b220dba-9c17-44a4-bc5d-bdb5d445e9aa)
+  kết quả:
+- Thêm yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2a3d0b06-53df-4032-9d0b-49c967eaaed7)
+  kết quả:
+- xoá yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/eb990bf6-e71a-4b22-a07a-4a74b0bc2145)
+  kết quả:
+- xem yêu cầu nghỉ phép, nghỉ bệnh, phúc lợi.
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1d53d19a-7aff-4806-8d6d-c3a7477b82ce)
+  kết quả:
+- Báo cáo lương của nhân viên trong tháng.
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc363835-c980-48c3-9e47-b47354db9db2)
++ kết quả:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/6b6c89e4-05f2-4e67-90d4-556dec9b3339)
+
+- Báo cáo chi tiết về tình trạng đào tạo của từng nhân viên
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b5432098-200c-4d94-bd58-7006eeec9917)
-      + kết quả:
+  + kết quả:
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/e9466f96-fb34-4351-9dfc-65c7b4e3f4ba)
 
-báo cáo đánh giá hiệu suất của nhân viên
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b810ac38-5639-4af7-9cfd-f788120654b4)
-      kết quả:
-      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ff160f71-1e31-4ca2-bbe8-662cfe3747ae)
+- báo cáo đánh giá hiệu suất của nhân viên
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b810ac38-5639-4af7-9cfd-f788120654b4)
++ kết quả:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ff160f71-1e31-4ca2-bbe8-662cfe3747ae)
 
-  Báo cáo về số lượng ngày nghỉ của nhân viên trong tháng và trong năm
+- Báo cáo về số lượng ngày nghỉ của nhân viên trong tháng và trong năm
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/18248638-8eaf-462c-8808-ed49c61924a5)
-  kết quả: 
+- kết quả: 
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b859f501-3edc-4891-9c9c-91070e3c804e)
-
-  Báo cáo về tình hình vi phạm và kỷ luật của nhân viên
+  
+- Báo cáo về tình hình vi phạm và kỷ luật của nhân viên
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2092a645-036d-4112-b0a3-7b7e47698d2f)
   kết quả:
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b0395a98-813f-428d-b4c7-3c839fbfd8f6)
 
-Báo cáo về tình trạng sức khỏe của nhân viên
-![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/96dbf9f3-3be9-4f25-903f-21a18cf230f0)
+- Báo cáo về tình trạng sức khỏe của nhân viên
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/96dbf9f3-3be9-4f25-903f-21a18cf230f0)
 kết quả:
-![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/163176d9-2fcf-4629-8464-e976f0c23498)
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/163176d9-2fcf-4629-8464-e976f0c23498)
 
 
 
