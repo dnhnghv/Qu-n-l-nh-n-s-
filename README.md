@@ -38,17 +38,20 @@ CREATE DATABASE QuanLyNhanSuBenhVien;
     +  MaKhoa, FK: Khóa ngoại tham chiếu đến bảng Khoa, Đảm bảo rằng mỗi nhân viên được liên kết với một khoa hợp lệ.
     +  MaPhongBan, FK: Khóa ngoại tham chiếu đến bảng PhongBan, Đảm bảo rằng mỗi nhân viên được liên kết với một phòng ban hợp lệ.
     +  Các khóa ngoại trong bảng NhanVien đảm bảo rằng mỗi nhân viên được liên kết với một khoa và một phòng ban hợp lệ, duy trì tính toàn vẹn dữ liệu và hỗ trợ việc quản lý, truy vấn thông tin một cách hiệu quả.
-    +   FOREIGN KEY (MaKhoa) REFERENCES Khoa(MaKhoa),Câu lệnh này xác định rằng trường MaKhoa trong bảng NhanVien là một khóa ngoại (Foreign Key).
+    +   FOREIGN KEY (MaKhoa) REFERENCES Khoa(MaKhoa), xác định trường MaKhoa trong bảng NhanVien là một khóa ngoại (Foreign Key).
 Khóa ngoại MaKhoa tham chiếu đến trường MaKhoa của bảng Khoa.Điều này có nghĩa là giá trị của MaKhoa trong bảng NhanVien phải tồn tại trong trường MaKhoa của bảng Khoa.
 Khóa ngoại đảm bảo tính toàn vẹn dữ liệu bằng cách không cho phép nhập giá trị vào MaKhoa trong bảng NhanVien nếu giá trị đó không tồn tại trong bảng Khoa.
-    +   FOREIGN KEY (MaPhongBan) REFERENCES PhongBan(MaPhongBan), Câu lệnh này xác định rằng trường MaPhongBan trong bảng NhanVien là một khóa ngoại (Foreign Key).
+    +   FOREIGN KEY (MaPhongBan) REFERENCES PhongBan(MaPhongBan), trường MaPhongBan trong bảng NhanVien là khóa ngoại ).
 Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng PhongBan.Khóa ngoại đảm bảo tính toàn vẹn dữ liệu bằng cách không cho phép nhập giá trị vào MaPhongBan trong bảng NhanVien nếu giá trị đó không tồn tại trong bảng PhongBan.
+
     + dữ liệu được nhập cho bảng:
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/30c1809c-9d22-4804-a631-9eedd276fcbf)
 
     - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/89a72789-3412-400e-989d-1a779d7612ba)
     + mã phòng ban đặt là khoá chính vì mỗi phòng ban sẽ chỉ có một mã duy nhất, để tăng tự động cho Mã Phòng.
+      TenPhongBan NVARCHAR(100) NOT NULL;
+      MoTa NVARCHAR(255);
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc44480f-8b81-4c04-be7f-d6a713677cfd)
 
@@ -56,7 +59,9 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
     - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
       
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/9381d814-39fb-4d3b-85d4-0707f8e1ed57)
-    + đặt Mã Khoa vì mỗi khoa chỉ có một mã làm khoá chính và được tăng tự động
+    + đặt Mã Khoa vì mỗi khoa chỉ có một mã làm khoá chính và được tăng tự động;
+      TenKhoa NVARCHAR(100) NOT NULL;
+      MoTa NVARCHAR(255);
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/e3b50cc1-1f0a-4883-88ff-9a032b132f9c)
 
