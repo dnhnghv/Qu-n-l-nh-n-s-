@@ -215,7 +215,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
 kết quả:
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/163176d9-2fcf-4629-8464-e976f0c23498)
 # tạo FN:
-
+tạo FN tính tuổi: 
 ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/255cbc88-0a25-4c9c-b3a6-fe2fb6bbee13)
 + kết quả:
 ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/926f82ac-0ff7-498e-9486-45b10ccc653a)
