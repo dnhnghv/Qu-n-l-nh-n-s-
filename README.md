@@ -250,6 +250,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
 # Tạo corsor
     - Tạo một cursor để duyệt qua từng nhân viên trong bảng NhanVien và cập nhật lương của họ dựa trên một điều kiện (tăng 10% lương cho những nhân viên có chức vụ là "Bác sĩ").
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/60408348-4356-4428-a976-7fc8eb9293eb)
+  
 
 
 
