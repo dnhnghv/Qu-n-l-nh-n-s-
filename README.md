@@ -129,7 +129,8 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5fe7f93d-35c0-409d-9c2a-63e92ba61402)
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/edf3b44a-1d1c-4b87-8bd6-2dfb2e57dc67)
-- Thêm các rằng buộc CK cho bài toán,
+- Thêm các rằng buộc (CK) cho bài toán.
+
     - Điểm đánh giá hiệu suất sẽ nằm trong khoảng từ 1 đến 10.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ea28c32e-5775-400d-9906-e1cfec9ea625)
 
