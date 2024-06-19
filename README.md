@@ -61,6 +61,8 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/e3b50cc1-1f0a-4883-88ff-9a032b132f9c)
 
     - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/dd7d28c4-eb04-42b3-81cb-af64f999dfa7)
+
     + Đảm bảo rằng giá trị trong trường MaNhanVien của bảng hiện tại phải tồn tại trong trường MaNhanVien của bảng NhanVien.
 Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bảng LichLamViec phải có MaNhanVien hợp lệ, tức là phải tham chiếu đến một nhân viên tồn tại trong bảng NhanVien.
       + dữ liệu được nhập cho bảng:
