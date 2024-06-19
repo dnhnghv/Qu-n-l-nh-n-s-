@@ -7,7 +7,13 @@
 # Thông tin về bài toán
 - Project csdl cho bài toán:Quản lý nhân sự trong bệnh viện.
 - mô tả về bài toán:
-Để quản lý nhân sự trong bệnh viện cần thiết kế cơ sở dữ liệu bao gồm các thông tin về nhân viên, phòng ban, công việc. lịch làm việc, đào tạo, đánh giá hiệu suất, lương bổng và các phúc lợi khác.
++ Tạo cơ sở dữ liệu và các bảng.
++ Thêm các ràng buộc kiểm tra (CHECK constraints).
++ Tạo các thủ tục lưu trữ (Stored Procedures).
++ Thêm, sửa, xóa và xem thông tin nhân viên,Lịch làm việc,Đào tạo,Nghỉ phép và phúc lợi.
++ Báo cáo: Tạo các báo cáo về lương, đào tạo, hiệu suất, nghỉ phép, vi phạm kỷ luật và sức khỏe của nhân viên.
++ Tạo các hàm (Functions):Tính tuổi của nhân viên dựa trên ngày sinh, tính tổng lương của nhân viên trong tháng, tính số ngày nghỉ của nhân viên trong tháng.
+
 # Chức năng:
 Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản lý hiệu quả và tối ưu hóa nguồn nhân lực:
 - Quản lý thông tin nhân viên: Thêm một nhân sự mới, sửa thông tin của nhân sự, xoá thông tin của một nhân viên,xem thông tin nhân viên bệnh viện bao gồm mã nhân viên, họ tên, ngày sinh, ngày vào làm, chức vụ, Khoa, và mức lương.
