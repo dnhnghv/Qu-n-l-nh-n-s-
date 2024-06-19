@@ -32,7 +32,8 @@ Bài toán quản lý nhân sự trong bệnh viện nhằm đảm bảo quản 
 CREATE DATABASE QuanLyNhanSuBenhVien;
 - với các mô tả chức năng và báo cáo như trên thì bài toán cần có các bảng sau:
   - Bảng NhanVien(MaNhanVien,HoTen,NgaySinh,NgayVaoLam,ChucVu,MaKhoa,MaPhongBan,Luong);
-    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/45f08868-ee4c-416c-968f-8b271d486d85)
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/4e162182-8e69-4005-8ad7-a2251b9e60c2)
+
     +  MaNhanVien, PK: Mã nhân viên duy nhất cho mỗi nhân viên, để tăng tự động cho Mã Nhân Viên;
     +  MaKhoa, FK: Khóa ngoại tham chiếu đến bảng Khoa, Đảm bảo rằng mỗi nhân viên được liên kết với một khoa hợp lệ.
     +  MaPhongBan, FK: Khóa ngoại tham chiếu đến bảng PhongBan, Đảm bảo rằng mỗi nhân viên được liên kết với một phòng ban hợp lệ.
