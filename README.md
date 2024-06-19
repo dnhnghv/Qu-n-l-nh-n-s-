@@ -36,28 +36,41 @@ Khóa ngoại MaKhoa tham chiếu đến trường MaKhoa của bảng Khoa.Đi�
 Khóa ngoại đảm bảo tính toàn vẹn dữ liệu bằng cách không cho phép nhập giá trị vào MaKhoa trong bảng NhanVien nếu giá trị đó không tồn tại trong bảng Khoa.
     +   FOREIGN KEY (MaPhongBan) REFERENCES PhongBan(MaPhongBan), Câu lệnh này xác định rằng trường MaPhongBan trong bảng NhanVien là một khóa ngoại (Foreign Key).
 Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng PhongBan.Khóa ngoại đảm bảo tính toàn vẹn dữ liệu bằng cách không cho phép nhập giá trị vào MaPhongBan trong bảng NhanVien nếu giá trị đó không tồn tại trong bảng PhongBan.
-    
+    + dữ liệu được nhập cho bảng:
+    ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/30c1809c-9d22-4804-a631-9eedd276fcbf)
+
   - Bảng PhongBan(MaPhongBan,TenPhongBan,MoTa);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/89a72789-3412-400e-989d-1a779d7612ba)
     + mã phòng ban đặt là khoá chính vì mỗi phòng ban sẽ chỉ có một mã duy nhất, để tăng tự động cho Mã Phòng.
+    + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc44480f-8b81-4c04-be7f-d6a713677cfd)
+
       
   - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/9381d814-39fb-4d3b-85d4-0707f8e1ed57)
     + đặt Mã Khoa vì mỗi khoa chỉ có một mã làm khoá chính và được tăng tự động
-      
+    + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/e3b50cc1-1f0a-4883-88ff-9a032b132f9c)
+
   - Bảng LichLamViec(MaLich,MaNhanVien,NgayLamViec,GioBatDau,GioKetThuc);
     + Đảm bảo rằng giá trị trong trường MaNhanVien của bảng hiện tại phải tồn tại trong trường MaNhanVien của bảng NhanVien.
 Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bảng LichLamViec phải có MaNhanVien hợp lệ, tức là phải tham chiếu đến một nhân viên tồn tại trong bảng NhanVien.
+      + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5ecb4235-2e56-4262-94d5-10f526bc4bb9)
 
   - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/7ba628bb-c3a9-48d1-9a62-c8480369b2a5)
     + Đặt là khoá chính Mã đào tạo vì mỗi lần đào tạo sẽ chỉ có một mã duy nhất, để tăng tự động cho mã đào tạo.
     + Đảm bảo rằng trường MaNhanVien trong bảng DaoTao tham chiếu đến trường MaNhanVien trong bảng NhanVien,Đảm bảo rằng mỗi khóa đào tạo được ghi nhận trong bảng DaoTao là của một nhân viên hợp lệ, tức là một nhân viên có tồn tại trong bảng NhanVien
-      
+    + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2d1704ee-8f50-46fb-8e02-fb5bb1f9079e)
+
   - Bảng DanhGiaHieuSuat(MaDanhGia,MaNhanVien,NgayDanhGia,DiemDanhGia,GhiChu);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/40b042ce-146c-4423-b4ba-90b79fdd484b)
 mã đánh giá Là khóa chính (Primary Key) của bảng HieuSuat, đảm bảo mỗi bản ghi trong bảng này là duy nhất.
 Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bảng HieuSuat đảm bảo rằng mỗi bản ghi hiệu suất liên kết với một nhân viên hợp lệ trong bảng NhanVien, duy trì tính toàn vẹn dữ liệu và hỗ trợ các truy vấn phức tạp liên quan đến đánh giá hiệu suất của nhân viên.
+    + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/71933be2-b10e-4142-9a6c-beac7d56e241)
 
   - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/75df9cf0-b86f-406e-b150-9b4d9c3186af)
@@ -66,12 +79,17 @@ Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bản
 Khóa ngoại đảm bảo rằng mỗi bản ghi lương phải liên kết với một nhân viên cụ thể trong bảng NhanVien.
 Đảm bảo rằng không thể nhập một MaNhanVien vào bảng Luong nếu mã nhân viên đó không tồn tại trong bảng NhanVien.
 giúp thực hiện các truy vấn kết hợp dữ liệu từ cả hai bảng để tạo báo cáo chi tiết về lương của nhân viên.
+    + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/393fb401-2e42-46a2-bced-fac105d6f7f2)
+
   - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/37589023-568d-482f-b77c-2df698f9a05e)
     + Khóa ngoại đảm bảo rằng giá trị của cột MaNhanVien trong bảng Phúc Lợi phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này đảm bảo rằng mỗi phúc lợi phải được gán cho một nhân viên hợp lệ trong bảng Nhân Viên.
 Khóa ngoại tạo mối quan hệ giữa bảng Phúc Lợi và bảng Nhân Viên. Nó giúp kết nối thông tin về phúc lợi với thông tin về nhân viên nhận phúc lợi đó.
 Với ràng buộc khóa ngoại, khi bạn thực hiện các thao tác như JOIN giữa bảng Phúc Lợi và bảng Nhân Viên, bạn có thể dễ dàng lấy thông tin liên quan từ cả hai bảng dựa trên mối quan hệ giữa chúng.
 Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc khóa ngoại sẽ kiểm tra xem MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
+      + dữ liệu được nhập cho bảng:
+        ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/66a8a0cc-76fe-4e0d-abcd-0bb3f938440a)
 
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/c2dc0003-48e3-4e05-b4f2-72a383bffa78)
@@ -81,7 +99,9 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc
 Khóa ngoại này tạo mối quan hệ giữa bảng Nghỉ Phép và bảng Nhân Viên. Điều này giúp liên kết thông tin về kỳ nghỉ phép với nhân viên cụ thể trong bảng Nhân Viên.
 Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN, ràng buộc khóa ngoại này giúp dễ dàng lấy thông tin liên quan từ cả bảng Nghỉ Phép và bảng Nhân Viên dựa trên mối quan hệ giữa chúng.
 Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
-    
+      + dữ liệu được nhập cho bảng:
+        ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ba3822fc-d205-4cee-a98f-ae4241cf6ac4)
+
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a4047a52-1117-49dc-8489-46b87d8d84b2)
 
@@ -89,6 +109,14 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộ
 Khóa ngoại tạo mối quan hệ giữa bảng Vi Phạm Kỷ Luật và bảng Nhân Viên. Nó giúp kết nối thông tin về vi phạm kỷ luật với thông tin về nhân viên vi phạm đó.
 Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN, ràng buộc khóa ngoại này giúp dễ dàng lấy thông tin liên quan từ cả bảng Vi Phạm Kỷ Luật và bảng Nhân Viên dựa trên mối quan hệ giữa chúng.
 Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
+      + dữ liệu được nhập cho bảng:
+        ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/aa59fee3-a44a-47c5-a134-42bee99130f6)
+        chú ý là ngày vi phạm không được xảy ra ở tương lai.
+   + tạo bảng sức khoẻ
+     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5fe7f93d-35c0-409d-9c2a-63e92ba61402)
+    + dữ liệu được nhập cho bảng:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/edf3b44a-1d1c-4b87-8bd6-2dfb2e57dc67)
+
   ##thêm các rằng buộc CK cho bài toán:
     - Điểm đánh giá hiệu suất sẽ nằm trong khoảng từ 1 đến 10.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ea28c32e-5775-400d-9906-e1cfec9ea625)
@@ -106,7 +134,6 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
      # Tạo SP cho bài.
        ## Thêm một nhân sự mới.
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/8a46d6e7-63c5-4359-baf6-6d2371f4fb5f)
-
       ## Sửa thông tin của nhân sự.
   ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/3e3e8535-f7f4-4f78-830a-856f49f57f37)
       ## Xoá thông tin của một nhân viên
@@ -137,6 +164,34 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/1d53d19a-7aff-4806-8d6d-c3a7477b82ce)
       ## Báo cáo lương của nhân viên trong tháng.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc363835-c980-48c3-9e47-b47354db9db2)
+  kết quả: ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/6b6c89e4-05f2-4e67-90d4-556dec9b3339)
+
+  Báo cáo chi tiết về tình trạng đào tạo của từng nhân viên
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b5432098-200c-4d94-bd58-7006eeec9917)
+      + kết quả:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/e9466f96-fb34-4351-9dfc-65c7b4e3f4ba)
+
+báo cáo đánh giá hiệu suất của nhân viên
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b810ac38-5639-4af7-9cfd-f788120654b4)
+      kết quả:
+      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ff160f71-1e31-4ca2-bbe8-662cfe3747ae)
+
+  Báo cáo về số lượng ngày nghỉ của nhân viên trong tháng và trong năm
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/18248638-8eaf-462c-8808-ed49c61924a5)
+  kết quả: 
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b859f501-3edc-4891-9c9c-91070e3c804e)
+
+  Báo cáo về tình hình vi phạm và kỷ luật của nhân viên
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2092a645-036d-4112-b0a3-7b7e47698d2f)
+  kết quả:
+  ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/b0395a98-813f-428d-b4c7-3c839fbfd8f6)
+
+Báo cáo về tình trạng sức khỏe của nhân viên
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/96dbf9f3-3be9-4f25-903f-21a18cf230f0)
+kết quả:
+![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/163176d9-2fcf-4629-8464-e976f0c23498)
+
+
 
 
 
