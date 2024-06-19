@@ -51,6 +51,7 @@ Khóa ngoại MaPhongBan tham chiếu đến trường MaPhongBan của bảng P
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/fc44480f-8b81-4c04-be7f-d6a713677cfd)
 
+
     - Bảng Khoa(MaKhoa,TenKhoa,MoTa);
       
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/9381d814-39fb-4d3b-85d4-0707f8e1ed57)
@@ -64,6 +65,7 @@ Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bản
       + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5ecb4235-2e56-4262-94d5-10f526bc4bb9)
 
+
     - Bảng DaoTao(MaDaoTao,MaNhanVien,TenKhoa,NgayDaoTao,ChungChi);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/7ba628bb-c3a9-48d1-9a62-c8480369b2a5)
     + Đặt là khoá chính Mã đào tạo vì mỗi lần đào tạo sẽ chỉ có một mã duy nhất, để tăng tự động cho mã đào tạo.
@@ -71,12 +73,14 @@ Ví dụ, nếu bảng hiện tại là LichLamViec, mỗi bản ghi trong bản
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/2d1704ee-8f50-46fb-8e02-fb5bb1f9079e)
 
+
     - Bảng DanhGiaHieuSuat(MaDanhGia,MaNhanVien,NgayDanhGia,DiemDanhGia,GhiChu);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/40b042ce-146c-4423-b4ba-90b79fdd484b)
 mã đánh giá Là khóa chính (Primary Key) của bảng HieuSuat, đảm bảo mỗi bản ghi trong bảng này là duy nhất.
 Câu lệnh FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien) trong bảng HieuSuat đảm bảo rằng mỗi bản ghi hiệu suất liên kết với một nhân viên hợp lệ trong bảng NhanVien, duy trì tính toàn vẹn dữ liệu và hỗ trợ các truy vấn phức tạp liên quan đến đánh giá hiệu suất của nhân viên.
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/71933be2-b10e-4142-9a6c-beac7d56e241)
+
 
     - Bảng Luong(MaLuong,MaNhanVien,ThangNam,SoTien);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/75df9cf0-b86f-406e-b150-9b4d9c3186af)
@@ -88,6 +92,7 @@ giúp thực hiện các truy vấn kết hợp dữ liệu từ cả hai bảng
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/393fb401-2e42-46a2-bced-fac105d6f7f2)
 
+
     - Bảng PhucLoi(MaPhucLoi,MaNhanVien,LoaiPhucLoi,NgayPhucLoi,GhiChu);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/37589023-568d-482f-b77c-2df698f9a05e)
     + Khóa ngoại đảm bảo rằng giá trị của cột MaNhanVien trong bảng Phúc Lợi phải tồn tại trong cột MaNhanVien của bảng Nhân Viên. Điều này đảm bảo rằng mỗi phúc lợi phải được gán cho một nhân viên hợp lệ trong bảng Nhân Viên.
@@ -96,6 +101,7 @@ Với ràng buộc khóa ngoại, khi bạn thực hiện các thao tác như JO
 Khi thêm hoặc cập nhật dữ liệu trong bảng Phúc Lợi, ràng buộc khóa ngoại sẽ kiểm tra xem MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
     + dữ liệu được nhập cho bảng:
      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/66a8a0cc-76fe-4e0d-abcd-0bb3f938440a)
+
 
   - Bảng NghiPhep(MaNghiPhep,MaNhanVien,LoaiNghiPhep,NgayBatDau,NgayKetThuc,LyDo);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/c2dc0003-48e3-4e05-b4f2-72a383bffa78)
@@ -107,6 +113,7 @@ Khi thực hiện các thao tác truy vấn dữ liệu, chẳng hạn như JOIN
 Khi thêm hoặc cập nhật dữ liệu trong bảng Nghỉ Phép, ràng buộc khóa ngoại sẽ kiểm tra xem giá trị MaNhanVien có tồn tại trong bảng Nhân Viên hay không. Nếu không tồn tại, thao tác sẽ bị từ chối, ngăn chặn việc nhập dữ liệu không hợp lệ.
      + dữ liệu được nhập cho bảng:
      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ba3822fc-d205-4cee-a98f-ae4241cf6ac4)
+
 
   - Bảng ViPhamKyLuat(MaViPham,MaNhanVien,NgayViPham,MoTaViPham,HinhThucKyLuat);
     ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/a4047a52-1117-49dc-8489-46b87d8d84b2)
@@ -122,8 +129,7 @@ Khi thêm hoặc cập nhật dữ liệu trong bảng Vi Phạm Kỷ Luật, r�
      ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/5fe7f93d-35c0-409d-9c2a-63e92ba61402)
     + dữ liệu được nhập cho bảng:
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/edf3b44a-1d1c-4b87-8bd6-2dfb2e57dc67)
-
-  ##thêm các rằng buộc CK cho bài toán:
+- Thêm các rằng buộc CK cho bài toán,
     - Điểm đánh giá hiệu suất sẽ nằm trong khoảng từ 1 đến 10.
       ![image](https://github.com/dnhnghv/Qu-n-l-nh-n-s-/assets/168661356/ea28c32e-5775-400d-9906-e1cfec9ea625)
 
